@@ -33,7 +33,3 @@ def fourth_task(s: str) -> str:
         s = final_string
         i += 1
     return final_string
-
-# Todo (lena): move to tests
-# test = 'One, two, three, four, five, Once I caught a fish alive.'
-# print(fourth_task(test))
