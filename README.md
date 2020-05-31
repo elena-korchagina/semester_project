@@ -1,7 +1,7 @@
 # semester_project
 
 
-In this project you can find four functions, each of them makes text "scrambled" in it's own way.
+In this project you can find the folder [tasks](https://github.com/elena-korchagina/semester_project/tree/master/tasks) with four functions, each of them makes text "scrambled" in it's own way.
 
 Function [one](https://github.com/elena-korchagina/semester_project/blob/master/tasks/one.py) randomly reorders all but the first and the last letter of each word of a text.
 Function [two](https://github.com/elena-korchagina/semester_project/blob/master/tasks/two.py)  randomly reorders all the letters in each word of a text.
