@@ -70,10 +70,12 @@ def remove_punctuation(text: str) -> str:
     """
     Removes punctuation from the given text
 
-    TODO (Lena): add more examples!
-    Examples
-        >>> remove_punctuation('sdsdasd')
-        'asdsadas'
+     Examples:
+        >>> remove_punctuation('hi, how are you?')
+        'hi how are you'
+        >>> remove_punctuation('Mummy, where did you buy it?')
+        'Mummy where did you buy it'
+    
     """
     return text.translate(PUNCTUATIONS)
 
