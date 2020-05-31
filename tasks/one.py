@@ -1,13 +1,12 @@
-"""
-First task
-"""
+
 from .utils import remove_punctuation, scrabble_word, dump_args
 
 
 @dump_args
 def first_task(s : str) -> str:
     """
-    Randomly reorders all but the first and last letters of each word (as in the original internet meme).
+    Function andomly reorders all but the first and last letters of each word in a text.
+    Example: Waht can we do wtih the durnekn sloair?
     """
 
     if not isinstance(s, str):
