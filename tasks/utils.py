@@ -3,12 +3,13 @@ import inspect
 import random
 import string
 
-PUNCTUATIONS = str.maketrans(dict.fromkeys(string.punctuation))
+PUNCTUATIONS = str.maketrans(dict.fromkeys(string.punctuation, ''))
 
 
 def shuffle_string(s: str) -> str:
     """
     Mixes all the letters in the given string
+    
     :param s: the string to shuffle
 
     Examples:
@@ -27,7 +28,16 @@ def shuffle_string(s: str) -> str:
 def scrabble_word(word: str) -> str:
     """
     Randomly reorders all but the first and the last letters in a word
+    
     :param word: the word to scrabble
+   
+   Examples:
+        >>> scrabble_word('abc')
+        'abc'
+        >>> scrabble_word('abcdef')
+        'acdebf'
+        >>> scrabble_word('i like python')
+        'iytkiep hl on'
     """
     if len(word) <= 3:
         return word
@@ -40,6 +50,19 @@ def scrabble_word(word: str) -> str:
 
 
 def random_up(sentence):
+    """
+    Randomly makes some letters lower case and some upper case
+    
+    :param sentence: the sentence to mix case of the letters in
+   
+   Examples:
+        >>> random_up('abc')
+        'Abc'
+        >>> random_up('abcdef')
+        'acDeBf'
+        >>> random_up('i like python')
+        'i lIKE pYThOn'
+    """
     return ''.join(random.choice((str.upper, str.lower))(c) for c in sentence)
 
 
