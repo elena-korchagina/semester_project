@@ -54,9 +54,7 @@ class TestFirstTask(unittest.TestCase):
             if len(test_words[i]) > 3:
                 self.assertNotEqual(test_words[i], result_words[i])
             i+=1
-        # Todo (lena): find a way to test each word of the result satisfies the function logic
-        # self.assertEqual(test[0], result[0])
-        # self.assertEqual(test[-1], result[-1])
+       
 
 
 class TestSecondTask(unittest.TestCase):
