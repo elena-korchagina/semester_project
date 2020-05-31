@@ -2,9 +2,6 @@ import string
 
 from .utils import shuffle_string, remove_punctuation, dump_args
 
-# Third Task:
-""" Randomly reorder all the letters in words that are shorter than a given number of letters
-(this given number of letters is an extra argument to the function):"""
 
 """ At first step we have to make our text free from punctuations , so that it doesn't mix up with the letters:"""
 
@@ -15,6 +12,20 @@ from .utils import shuffle_string, remove_punctuation, dump_args
 
 
 def shuffle_short(sentence, n):
+    """
+    Helping function that randomly reorders all the letters in words that are shorter than a given number of letters
+    :param sentence: the string to shuffle
+    :param n: the number of letters
+    Examples:
+        >>> shuffle_short('What can we do with the drunken sailor')
+        ' What can we do with teh drunken sailor'
+        >>> shuffle_short('Because the sky is blue it makes me cry')
+        'Because the syk si blue it makes me yrc'
+      
+    Raises: TypeError in case of an empty string
+            ValueError in case that argument is not a string
+    
+    """
     def shuffle_short_words(word):
         if len(word) >= n:
             return word
@@ -28,11 +39,22 @@ def shuffle_short(sentence, n):
     return ' '.join(map(shuffle_short_words, words))
 
 
-""" And get back the punctuation:"""
-
 
 @dump_args
 def third_task(s: str, n: int) -> str:
+    """ 
+    Randomly reorder all the letters in words that are shorter than a given number of letters
+(this given number of letters is an extra argument to the function):
+    :param s: the string to shuffle
+    :param n: the number of letters
+    Examples:
+        >>> third_task('What can we do with the drunken sailor?')
+        ' What can we do with teh drunken sailor?'
+        >>> third_task('Because the sky is blue, it makes me cry')
+        'Because the syk si blue, it makes me yrc'
+
+    """
+   
     if not isinstance(s, str):
         raise TypeError('s must be a non-empty string')
     elif s == '':
@@ -54,8 +76,3 @@ def third_task(s: str, n: int) -> str:
         s = final_string
         i += 1
     return final_string
-
-# Todo (lena): move to tests
-# test = 'Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall...'
-# third_task(test, 4)
-# print(third_task(test, 4))
