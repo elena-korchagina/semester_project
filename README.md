@@ -9,7 +9,8 @@ Function [two](https://github.com/elena-korchagina/semester_project/blob/master/
 
 Function [three](https://github.com/elena-korchagina/semester_project/blob/master/tasks/three.py) randomly reorders all the letters in words that are shorter then a given number of letters.
 
-Function four randomly makes some letters lowercase and some uppercase.
+Function [four](https://github.com/elena-korchagina/semester_project/blob/master/tasks/four.py) randomly makes some letters  lowercase and some uppercase.
+
 To test all of the functions you need to run the file main, as it contains all the tests for all the functions, mentioned above.
 If you would like to see the functions one by one, you can run the files one, two, three, four respectively.
 The file utils has all the functions that were used more than once in this project.
