@@ -7,14 +7,14 @@ def first_task(s : str) -> str:
     """
     Function randomly reorders all but the first and last letters of each word in a text.
     
-    Args: takes a string (text)
-    
-    Returns: string (text) with randomly reordered all but the first and last lettersof each word in a text.
-    
-    Examples: 
-    What can we do with the drunken sailor? -> Waht can we do wtih the durnekn sloair?
-    
-    Because the sky is blue, it makes me cry -> Baceuse the sky is bule, it mkeas me cry
+    :param s: the string to shuffle
+    Examples:
+        >>> first_task('What can we do with the drunken sailor?')
+        ' Waht can we do wtih the durnekn sloair?'
+        >>> first_task('Because the sky is blue, it makes me cry')
+        'Baceuse the sky is bule, it mkeas me cry'
+      
+        
     
     Raises: TypeError in case of an empty string
             ValueError in case that argument is not a string
