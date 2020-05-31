@@ -14,8 +14,6 @@ def first_task(s : str) -> str:
         >>> first_task('Because the sky is blue, it makes me cry')
         'Baceuse the sky is bule, it mkeas me cry'
       
-        
-    
     Raises: TypeError in case of an empty string
             ValueError in case that argument is not a string
     
