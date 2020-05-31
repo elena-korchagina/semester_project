@@ -16,7 +16,7 @@ If you would like to see the functions one by one, you can run the files [one](h
 
 The file [utils](https://github.com/elena-korchagina/semester_project/blob/master/tasks/utils.py) has all the functions that were used more than once in this project.
 
-### Tesing
+## Tesing
 To test all of the functions you need to run the file [main](https://github.com/elena-korchagina/semester_project/blob/master/main.py), as it contains all the tests for all the functions, mentioned above.
 
 
