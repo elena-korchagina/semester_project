@@ -7,12 +7,12 @@ def shuffle_short(sentence:str, n:int) -> str:
     """
     Helping function that randomly reorders all the letters in words that are shorter than a given number of letters
    
-    Parameters:
-    sentence(str): the string to shuffle
-    n(int): the number of letters
+        Parameters:
+        sentence(str): the string to shuffle
+        n(int): the number of letters
     
-    Returns:
-    str: string with reordered letters
+        Returns:
+        str: string with reordered letters
     
     Examples:
         >>> shuffle_short('What can we do with the drunken sailor')
@@ -20,6 +20,7 @@ def shuffle_short(sentence:str, n:int) -> str:
         >>> shuffle_short('Because the sky is blue it makes me cry')
         'Because the syk si blue it makes me yrc'
     """
+    
     def shuffle_short_words(word):
         if len(word) >= n:
             return word
@@ -35,10 +36,14 @@ def shuffle_short(sentence:str, n:int) -> str:
 
 def third_task(s: str, n: int) -> str:
     """ 
-    Randomly reorder all the letters in words that are shorter than a given number of letters
-(this given number of letters is an extra argument to the function):
-    :param s: the string to shuffle
-    :param n: the number of letters
+    Randomly reorder all the letters in words that are shorter than a given number of letters:
+        Parameters:
+        s(str): the string to shuffle
+        n(int): the number of letters
+    
+        Returns:
+        str: string with reordered letters
+        
     Examples:
         >>> third_task('What can we do with the drunken sailor?')
         ' What can we do with teh drunken sailor?'
@@ -50,7 +55,6 @@ def third_task(s: str, n: int) -> str:
             
             TypeError in case of an empty number
             ValueError in case that argument is not a number
-    
     """
    
     if not isinstance(s, str):
