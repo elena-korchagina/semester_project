@@ -3,14 +3,18 @@ import inspect
 import random
 import string
 
-#We make adictionary of all punctuation signs.
+#dictionary of all punctuation signs:
 PUNCTUATIONS = str.maketrans(dict.fromkeys(string.punctuation, ' '))
 
 def shuffle_string(s: str) -> str:
     """
     Mixes all the letters in the given string
     
-    :param s: the string to shuffle
+        Parameters:
+        s(str): the string to shuffle
+        
+        Returns:
+        str: string with randomly reordered letters
 
     Examples:
         >>> shuffle_string('abc')
@@ -29,7 +33,11 @@ def scrabble_word(word: str) -> str:
     """
     Randomly reorders all but the first and the last letters in a word
     
-    :param word: the word to scrabble
+        Parameters:
+        word(str): the word to scrabble
+        
+        Returns:
+        str: the word with randomly reordered all but the first and the last letters 
    
    Examples:
         >>> scrabble_word('abc')
@@ -49,13 +57,17 @@ def scrabble_word(word: str) -> str:
         return first + result_mid + last
 
 
-def random_up(sentence):
+def random_up(sentence: str) -> str:
     """
     Randomly makes some letters lower case and some upper case
     
-    :param sentence: the sentence to mix case of the letters in
+        Parameters:
+        sentence(str): the sentence to mix case of the letters in
+        
+        Returns:
+        str: modified sentence
    
-   Examples:
+    Examples:
         >>> random_up('abc')
         'Abc'
         >>> random_up('abcdef')
@@ -70,9 +82,12 @@ def remove_punctuation(text: str) -> str:
     """
     Removes punctuation from the given text
     
-    :param text: the text to remove punctuation in
+        Parameters:
+        text(str): the text to remove punctuation in
+        Returns:
+        str: modified sentence
 
-     Examples:
+    Examples:
         >>> remove_punctuation('hi, how are you?')
         'hi how are you'
         >>> remove_punctuation('Mummy, where did you buy it?')
