@@ -4,20 +4,18 @@ from .utils import shuffle_string, remove_punctuation, dump_args
 
 def second_task(s : str) -> str:
     """ This function randomly reorders all the letters in a world.
-    
-    Args: takes a string (text)
-    
-    Returns: string (text) with randomly reordered letters of each word in a text.
-    
-    Examples: 
-    What can we do with the drunken sailor? -> Tahw acn ew od hwit the unekrnd lsaoir?
-    
-    Because the sky is blue, it makes me cry -> eaucBes teh ysk is elbu, ti kemas em cyr
-    
+      
+     :param s: the string to shuffle
+    Examples:
+        >>> second_task('What can we do with the drunken sailor?')
+        ' Tahw acn ew od hwit the unekrnd lsaoir?'
+        >>> second_task('Because the sky is blue, it makes me cry')
+        'eaucBes teh ysk is elbu, ti kemas em cyr'
+      
     Raises: TypeError in case of an empty string
             ValueError in case that argument is not a string
-    
     """
+    
     if not isinstance(s, str):
         raise TypeError('s must be a non-empty string')
     elif s == '':
