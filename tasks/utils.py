@@ -3,8 +3,8 @@ import inspect
 import random
 import string
 
-#We make adictionary of all punctuation signs as we want them not to mix up with the letters, but to be present in the output.
-PUNCTUATIONS = str.maketrans(dict.fromkeys(string.punctuation, ''))
+#We make adictionary of all punctuation signs.
+PUNCTUATIONS = str.maketrans(dict.fromkeys(string.punctuation, ' '))
 
 def shuffle_string(s: str) -> str:
     """
