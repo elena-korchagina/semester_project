@@ -1,4 +1,5 @@
 # semester_project
+The code is written to be run in Python 3+
 
 ## Functions
 
