@@ -3,7 +3,9 @@ from .utils import shuffle_string, remove_punctuation, dump_args
 @dump_args
 
 def second_task(s : str) -> str:
-    """ This function randomly reorders all the letters in a world.
+    """ 
+    This function randomly reorders all the letters in a world.
+    
         Parameters: 
         s: the string to shuffle
         Returns:
