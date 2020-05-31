@@ -5,8 +5,20 @@ from .utils import remove_punctuation, scrabble_word, dump_args
 @dump_args
 def first_task(s : str) -> str:
     """
-    Function andomly reorders all but the first and last letters of each word in a text.
-    Example: Waht can we do wtih the durnekn sloair?
+    Function randomly reorders all but the first and last letters of each word in a text.
+    
+    Args: takes a string (text)
+    
+    Returns: string (text) with randomly reordered all but the first and last lettersof each word in a text.
+    
+    Examples: 
+    What can we do with the drunken sailor? -> Waht can we do wtih the durnekn sloair?
+    
+    Because the sky is blue, it makes me cry -> Baceuse the sky is bule, it mkeas me cry
+    
+    Raises: TypeError in case of an empty string
+            ValueError in case that argument is not a string
+    
     """
 
     if not isinstance(s, str):
@@ -14,10 +26,10 @@ def first_task(s : str) -> str:
     elif s == '':
         raise ValueError('s must be a non-empty string')
 
-    # print('first_task[in]:', s)
     # At first step we have to make our text free from punctuations
-    # so that it doesn't mix up with the letters
+    # so that it doesn't mix up with the letters  
     list_of_words = remove_punctuation(s).split()
+    #then we reorder the letters in the words of a text, using function scrabble_word, that is possible to find in utils
     list_of_scrabbled_words = []
     for elements in list_of_words:
         list_of_scrabbled_words.append(scrabble_word(elements))
@@ -31,6 +43,4 @@ def first_task(s : str) -> str:
         final_string = s.replace(str(list_of_words[i]), str(list_of_scrabbled_words[i]), 1)
         s = final_string
         i += 1
-
-    # print('first_task[out]:', final_string)
     return final_string
