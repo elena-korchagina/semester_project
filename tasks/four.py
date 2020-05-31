@@ -5,10 +5,10 @@ from .utils import random_up, remove_punctuation, dump_args
 def fourth_task(s: str) -> str:
     """
     Function randomly makes some letters of the words in a text upper case and some lower case
-    Parameters:
-    s(str): the string to modify
-    Returns:
-    str:string  with letters,randomly made upper case.
+        Parameters:
+        s(str): the string to modify
+        Returns:
+        str:string  with letters,randomly made upper case.
     
     Examples:
         >>> fourth_task('What can we do with the drunken sailor?')
