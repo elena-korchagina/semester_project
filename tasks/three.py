@@ -37,6 +37,7 @@ def shuffle_short(sentence:str, n:int) -> str:
 def third_task(s: str, n: int) -> str:
     """ 
     Randomly reorder all the letters in words that are shorter than a given number of letters:
+    
         Parameters:
         s(str): the string to shuffle
         n(int): the number of letters
