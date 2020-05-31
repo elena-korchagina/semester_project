@@ -14,5 +14,6 @@ Function [four](https://github.com/elena-korchagina/semester_project/blob/master
 To test all of the functions you need to run the file [main](https://github.com/elena-korchagina/semester_project/blob/master/main.py), as it contains all the tests for all the functions, mentioned above.
 
 If you would like to see the functions one by one, you can run the files [one](https://github.com/elena-korchagina/semester_project/blob/master/tasks/one.py), [two](https://github.com/elena-korchagina/semester_project/blob/master/tasks/two.py), [three](https://github.com/elena-korchagina/semester_project/blob/master/tasks/three.py), [four](https://github.com/elena-korchagina/semester_project/blob/master/tasks/four.py) respectively.
-The file utils has all the functions that were used more than once in this project.
+
+The file [utils](https://github.com/elena-korchagina/semester_project/blob/master/tasks/utils.py) has all the functions that were used more than once in this project.
 You can find the licence [here](https://github.com/elena-korchagina/semester_project/blob/master/LICENSE)
