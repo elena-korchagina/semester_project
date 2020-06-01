@@ -6,9 +6,9 @@ def second_task(s : str) -> str:
     """ 
     This function randomly reorders all the letters in a world.
     
-        Parameters: 
+    Parameters: 
         s: the string to shuffle
-        Returns:
+    Returns:
         str: shuffled string
     Examples:
         >>> second_task('What can we do with the drunken sailor?')
