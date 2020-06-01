@@ -17,7 +17,7 @@ Example: What can we do with the drunken sailor? -> What acn ew od with het drun
 Function [four](https://github.com/elena-korchagina/semester_project/blob/master/tasks/four.py) randomly makes some letters  lowercase and some uppercase. 
 Example: What can we do with the drunken sailor? -> WHAT cAn wE do WiTH tHe DrUnkEN sAIloR?
 
-If you would like to see the functions one by one, you can run the files [one](https://github.com/elena-korchagina/semester_project/blob/master/tasks/one.py), [two](https://github.com/elena-korchagina/semester_project/blob/master/tasks/two.py), [three](https://github.com/elena-korchagina/semester_project/blob/master/tasks/three.py), [four](https://github.com/elena-korchagina/semester_project/blob/master/tasks/four.py) respectively.
+If you would like to see the functions one by one, you can call them from the files [one](https://github.com/elena-korchagina/semester_project/blob/master/tasks/one.py), [two](https://github.com/elena-korchagina/semester_project/blob/master/tasks/two.py), [three](https://github.com/elena-korchagina/semester_project/blob/master/tasks/three.py), [four](https://github.com/elena-korchagina/semester_project/blob/master/tasks/four.py) respectively.
 
 The file [utils](https://github.com/elena-korchagina/semester_project/blob/master/tasks/utils.py) has all the functions that were used more than once in this project.
 
