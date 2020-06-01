@@ -7,11 +7,11 @@ def shuffle_short(sentence:str, n:int) -> str:
     """
     Helping function that randomly reorders all the letters in words that are shorter than a given number of letters
    
-        Parameters:
+    Parameters:
         sentence(str): the string to shuffle
         n(int): the number of letters
     
-        Returns:
+    Returns:
         str: string with reordered letters
     
     Examples:
@@ -38,11 +38,11 @@ def third_task(s: str, n: int) -> str:
     """ 
     Randomly reorder all the letters in words that are shorter than a given number of letters:
     
-        Parameters:
+    Parameters:
         s(str): the string to shuffle
         n(int): the number of letters
     
-        Returns:
+    Returns:
         str: string with reordered letters
         
     Examples:
